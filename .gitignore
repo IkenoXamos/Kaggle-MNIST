@@ -29,6 +29,6 @@
 
 # Loose Files #
 ###############
-test.csv
-train.csv
-mnist_submission.csv
+# test.csv
+# train.csv
+# mnist_submission.csv
