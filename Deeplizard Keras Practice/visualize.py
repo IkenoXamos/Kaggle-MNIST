@@ -47,7 +47,7 @@ input_img = X_train[img].reshape(1, 28, 28, 1)
 filter_index = 0
 layer_name = 'conv2d_1'
 
-plt.imshow(input_img.reshape(28,28), interpolation='nearest', cmap=plt.cm.binary)
+plt.imshow(input_img.reshape(28,28), interpolation='nearest')
 plt.show()
 print("label : ", Y_train[img,:])
 
@@ -63,7 +63,7 @@ for layer_name in layerlist:
     ActivationTensor = model.predict(input_img)
     
     for i in range(ActivationTensor.shape[3]):
-        im = plt.imshow(ActivationTensor[:, :, :, i].reshape(28,28), interpolation='nearest', cmap=plt.cm.binary)
+        im = plt.imshow(ActivationTensor[:, :, :, i].reshape(28,28), interpolation='nearest')
         plt.savefig('Activations/Activation of ' + str(i) + 'th filter in layer ' + layer_name + '.png')
         plt.show()
 
@@ -77,7 +77,7 @@ for layer_name in layerlist:
     ActivationTensor = model.predict(input_img)
     
     for i in range(ActivationTensor.shape[3]):
-        im = plt.imshow(ActivationTensor[:, :, :, i].reshape(14,14), interpolation='nearest', cmap=plt.cm.binary)
+        im = plt.imshow(ActivationTensor[:, :, :, i].reshape(14,14), interpolation='nearest')
         plt.savefig('Activations/Activation of ' + str(i) + 'th filter in layer ' + layer_name + '.png')
         plt.show()
 
