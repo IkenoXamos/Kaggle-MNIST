@@ -32,3 +32,4 @@
 # test.csv
 # train.csv
 # mnist_submission.csv
+Activations/*.png
