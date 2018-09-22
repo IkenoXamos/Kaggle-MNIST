@@ -1,0 +1,1 @@
+Just a placeholder file, so the Activations folder will exist on the repo, as it is necessary to store the images of each of the activations.
