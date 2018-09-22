@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-test = pd.read_csv('test.csv')
-train = pd.read_csv('train.csv')
+test = pd.read_csv('Deeplizard Keras Practice\\test.csv')
+train = pd.read_csv('Deeplizard Keras Practice\\train.csv')
 
 from sklearn.model_selection import train_test_split
 
@@ -53,7 +53,7 @@ print("label : ", Y_train[img,:])
 
 layerlist = ['conv2d_' + str(i + 1) for i in range(2)]
 
-'''
+
 
 for layer_name in layerlist:
     model = load_model('MNIST weights.h5')
@@ -118,3 +118,4 @@ for i in range(20):
     if loss_value <= 0.:
         break
 
+'''
